@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+
+def sdk_version_name =  "1.2";
+
+android {
+    compileSdkVersion 29
+
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 29
+        versionCode 2
+        versionName sdk_version_name
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+//            buildConfigField "String", "LIB_VERSION", "${sdk_version_name}"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+}
+
+//定义一个函数，target是生成jar包的文件名，classDir是class文件所在的文件夹
+def makeJar(String target,String classDir){
+    exec{
+        executable "jar"   //调用jar
+        args "cvf",target
+        args "-C", classDir
+        args "","."
+
+
+    }
+}
+
+//新建一个task,名为buildLib,依赖build(build是一个自带的task)
+task buildLib(dependsOn:['build']) doLast {
+    makeJar("angeldoctor_device_lib_"+sdk_version_name+".jar","build/intermediates/classes/debug")
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activities.StudentsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_width="@dimen/size_small"
+                    android:layout_height="@dimen/size_small" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:text="Student List"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large"
+                    android:layout_marginStart="@dimen/space_large"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/background_border"
+        android:padding="@dimen/space_large"
+        android:layout_margin="@dimen/space_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_large"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_dark"
+            android:layout_marginStart="@dimen/space_large"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            android:hint="@string/search_student"/>
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_width="200dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_title"
+            android:text="Select Class"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue"
+            android:layout_height="@dimen/size_normal"/>
+
+        <Spinner
+            android:id="@+id/spnClass"
+            android:layout_width="0dp"
+            android:background="@drawable/button_blue"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tvClassAdd"
+            android:layout_width="200dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_title"
+            android:text="Add Class"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue"
+            android:layout_height="@dimen/size_normal"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudents"
+        tools:listitem="@layout/item_student"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        android:padding="@dimen/space_large"
+        android:layout_marginTop="@dimen/space_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

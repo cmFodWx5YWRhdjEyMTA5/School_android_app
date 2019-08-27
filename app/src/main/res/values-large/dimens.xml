@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="camera_width">220dp</dimen>
+    <dimen name="camera_height">350dp</dimen>
+
+    <dimen name="size_image">150dp</dimen>
+    <dimen name="option_width">250dp</dimen>
+    <dimen name="option_height">200dp</dimen>
+
+    <dimen name="text_head">22sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_temperature">28sp</dimen>
+
+    <dimen name="student_image">90dp</dimen>
+
+
+    <dimen name="space_small">5dp</dimen>
+    <dimen name="space_normal">8dp</dimen>
+    <dimen name="space_large">12dp</dimen>
+    <dimen name="window_height">400dp</dimen>
+</resources>

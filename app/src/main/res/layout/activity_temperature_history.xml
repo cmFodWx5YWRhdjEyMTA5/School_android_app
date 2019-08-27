@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activities.TemperatureHistoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_width="@dimen/size_small"
+                    android:layout_height="@dimen/size_small" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:text="Temperature Records"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large"
+                    android:layout_marginStart="@dimen/space_large"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_large"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_margin="@dimen/space_large"
+        android:background="@drawable/background_border">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:hint="@string/search_student"
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/gray_dark"
+            android:layout_marginStart="@dimen/space_large"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/space_normal"
+            android:text="Date"
+            android:textSize="@dimen/text_head"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_blue"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/space_normal"
+            android:text="Select Class"
+            android:textSize="@dimen/text_head"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_blue"
+            android:layout_height="match_parent"/>
+
+        <Spinner
+            android:id="@+id/spnClass"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/space_normal"
+            android:textSize="@dimen/text_head"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_blue"
+            android:layout_height="0dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTemperature"
+        tools:listitem="@layout/item_temperature"
+        android:padding="@dimen/space_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

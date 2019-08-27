@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_large"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/school_circle"
+            android:layout_width="@dimen/size_normal"
+            android:layout_height="@dimen/size_normal" />
+
+        <TextView
+            android:id="@+id/tvSchool"
+            android:layout_toEndOf="@id/imgLogo"
+            android:layout_marginStart="@dimen/space_normal"
+            android:text="School Name"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/logout"
+            android:layout_width="@dimen/size_small"
+            android:layout_height="@dimen/size_small" />
+
+        <TextView
+            android:layout_below="@id/imgLogout"
+            android:layout_alignParentEnd="true"
+            android:text="Logout"
+            android:layout_marginTop="@dimen/space_small"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOptions"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        tools:listitem="@layout/item_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

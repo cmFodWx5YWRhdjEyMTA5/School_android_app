@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">School App</string>
+
+
+    <string name="start_rec_voice">Start accepting voice</string>
+    <string name="start_speaking">Start talking </string>
+    <string name="restore_map">restore map</string>
+    <string name="save_map">save map</string>
+    <string name="map_init_state_query">map initialization status query </string>
+    <string name="get_pose">Get coordinates</string>
+    <string name="show_current_pose">coordinates of display points </string>
+    <string name="click_to_save_pose1">click save location 1</string>
+    <string name="click_to_save_pose2">click save location 2</string>
+    <string name="click_to_save_pose3">click save location 3</string>
+    <string name="go_to_pose1">Go 1</string>
+    <string name="go_to_pose2">Go 2</string>
+    <string name="go_to_pose3">Go 3</string>
+    <string name="stop_navi">stop navigation </string>
+    <string name="get_battery">get power </string>
+    <string name="query_charge_state">Get whether or not it is charged </string>
+    <string name="go_forward">go ahead </string>
+    <string name="go_backward">backward</string>
+    <string name="turn_left_30">turn left 30 degrees </string>
+    <string name="turn_right_30">turn right 30 degrees </string>
+    <string name="resume_circle_run">Continue the loop </string>
+    <string name="pause_circle_run">pause loop walk </string>
+    <string name="start_circle_run"> start the loop </string>
+    <string name="end_circle_run">end the loop walk </string>
+    <string name="crowd_watching">I\'m surrounded by people, help!!</string>
+    <string name="post_not_arrive">The target point %s cannot be reached and will go to the next point.</string>
+    <string name="up_left_hand">reach left hand </string>
+    <string name="down_left_hand">go back to left hand </string>
+    <string name="up_right_hand">stretch out your right hand </string>
+    <string name="down_right_hand">go back to the right hand </string>
+    <string name="up_head">Head up </string>
+    <string name="down_head">bow </string>
+    <string name="node">nod </string>
+    <string name="go_back_charge">go back to charge </string>
+    <string name="speak_words">I spoke English.</string>
+    <string name="poweroff">poweroff</string>
+    <string name="get_linux_version">get linux version</string>
+    <string name="version_get_string">linux version is %s</string>
+    <string name="welcome">"Hello, I can speak english. Enter something below so i can speak"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_title">Login Your School Account</string>
+    <string name="login">Login</string>
+    <string name="change_photo">Change\nPhoto</string>
+
+    <string name="permission_title">Permission Needed!</string>
+    <string name="permission_message">This app needs Camera, SMS, Storage, Location and Phone State permissions.</string>
+    <string name="permission_needed">Permission Needed</string>
+    <string name="permission_phone">This Feature Need Phone State Permission.</string>
+    <string name="permission_camera">This Feature Need Camera Permission.</string>
+    <string name="permission_camera_storage">This Feature Need Camera and Storage Permissions.</string>
+    <string name="permission_storage">This Feature Need Storage Permission.</string>
+
+
+    <string name="bluetooth_try_connect">Trying to connect to a device</string>
+    <string name="ble_scan_" />
+    <string-array name="classes">
+        <item>Select Class</item>
+        <item>Jr KG</item>
+        <item>Sr KG</item>
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+    </string-array>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_notedtemperature">Notedtemperature</string>
+    <string name="title_activity_listofstudents">Listofstudents</string>
+
+
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="search_student">Search Student</string>
+
+
+</resources>
