@@ -27,9 +27,6 @@ import retrofit2.Retrofit;
 import static com.microbotic.temperature.app.Config.BASE_URL;
 
 
-/**
- * Created by Imran on 12-02-2018.
- */
 
 public class ApiClient {
     private static Retrofit retrofit = null;
